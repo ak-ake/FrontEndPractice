@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="../../assets/img/logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div><img src="../../assets/img/logo.jpg" alt="logo image" height="50px"></div>
+        <div>
+            <nav>
+                <a href="../../index.html">Home</a>
+                <a href="../about/">About</a>
+                <a href="index.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Wanna contact me?</h1>
+        <p>If you want to collab with me or wanna talk about any project(s) or just even a <del>fun</del> productive talk, then contact me via email.</p>
+
+        <section>
+           <form onsubmit="sendMail(event)">
+    <textarea id="email" placeholder="Write your message..." rows="6"></textarea>
+    <br><br>
+    <button type="submit">Send</button>
+</form>
+
+<script>
+function sendMail(event) {
+  event.preventDefault();
+
+  const message = document.getElementById("email").value;
+  const yourEmail = "ake.akibislam@gmail.com"; // put *your* email here
+
+  // Encode to avoid breaking link
+  const encodedMessage = encodeURIComponent(message);
+
+  // mailto link
+  const mailtoLink = `mailto:${yourEmail}?subject=New Message&body=${encodedMessage}`;
+
+  // Open email app
+  window.location.href = mailtoLink;
+}
+</script>
+        </section>
+    </main>
+</body>
+</html>
