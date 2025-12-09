@@ -1,0 +1,58 @@
+
+
+.logo img {
+    text-align: left;
+    width: 50px;
+    height: 50px;
+    
+}
+.nav {
+    text-align: right;
+}
+.nav a {
+    background-color: lightblue;
+    border-radius: 5px ;
+    padding: 6px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 650;
+}
+header {
+    display: inline-block;
+    padding: 15px;
+    height: auto;
+    width: 1320px;
+    border-radius: 15px;    
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    background: linear-gradient(45deg, #ff4b1f, #1fddff, #7f00ff, #00f260);
+    background-size: 400% 400%;
+
+    animation: gradientMove 15s ease infinite;
+}
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    background: linear-gradient(45deg, #ff4b1f, #1fddff, #7f00ff, #00f260);
+    background-size: 400% 400%;
+
+    animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
